@@ -1,0 +1,38 @@
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Map;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import io.appium.java_client.android.Activity;
+import io.appium.java_client.android.AndroidBatteryInfo;
+import io.appium.java_client.android.AndroidDriver;
+
+public class ConnectionStateInMobile {
+	 public static void main(String[] args) throws MalformedURLException {
+		 DesiredCapabilities des =new DesiredCapabilities();
+		 des.setCapability("deviceName", "Gionee S6s");
+		 //des.setCapability("udid", "PF7T5PKFP7QCF6WS");
+		 des.setCapability("platformName", "Android");
+		 des.setCapability("platformVersion", "7.0");
+		 des.setCapability("appPackage", "com.android.calculator2");
+		 des.setCapability("appActivity", "com.android.calculator2.Calculator");
+		 URL url=new URL("http://127.0.0.1:4723/wd/hub");
+		 
+		 AndroidDriver driver=new AndroidDriver(url,des);
+		 Map<String, Object> settings = driver.getSettings();
+		AndroidBatteryInfo ifb= driver.getBatteryInfo();
+		 System.out.println(ifb.getState());
+		 driver.startActivity(new Activity("com.android.deskclock", "com.android.deskclock.AlarmClock"));
+			/*
+			 * ConnectionStateBuilder b1 =new ConnectionStateBuilder();
+			 * b1.withDataEnabled();
+			 * 
+			 * ConnectionState state=new ConnectionState(4);
+			 * System.out.println(state.getBitMask());
+			 * System.out.println(state.isDataEnabled());
+			 * System.out.println(state.isWiFiEnabled());
+			 */
+		 
+	 }
+}

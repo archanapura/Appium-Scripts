@@ -1,0 +1,10 @@
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+public class AppiumTest {
+
+    public static void main(String[] args) {
+DesiredCapabilities des =new DesiredCapabilities();
+des.setCapability("", "");
+
+    }
+}
