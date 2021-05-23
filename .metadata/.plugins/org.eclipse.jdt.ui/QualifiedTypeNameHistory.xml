@@ -12,7 +12,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
     <fullyQualifiedTypeName name="io.appium.java_client.MobileDriver"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.mobile.NetworkConnection.ConnectionType"/>
     <fullyQualifiedTypeName name="io.appium.java_client.android.connection.ConnectionStateBuilder"/>
     <fullyQualifiedTypeName name="io.appium.java_client.android.connection.ConnectionState"/>
@@ -33,4 +32,7 @@
     <fullyQualifiedTypeName name="io.appium.java_client.LogsEvents"/>
     <fullyQualifiedTypeName name="CommonMethods.MyLogs"/>
     <fullyQualifiedTypeName name="io.appium.java_client.serverevents.CustomEvent"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 </qualifiedTypeNameHistroy>
